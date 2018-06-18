@@ -300,7 +300,6 @@ vendor/lib64/libmlipay.so|c988ff04fcd90621cf46d219bdbc7eef341d1ce6
 vendor/lib64/libmlipay@1.1.so|7d07b19faa36c62babf39a41b2baf8de370d706c
 
 # Perf - from jasmine
-vendor/bin/energy-awareness|6515fada09432a437d2ed591ce141bb70fb10a9e
 vendor/bin/hw/vendor.qti.hardware.perf@2.0-service|82db9da81990fe8ab08487780a3783a1d147edfc
 vendor/bin/msm_irqbalance|e917104fbd26c844d27ffb2b7ec4f665fdfb8b78
 vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc|cc8658db5e19f8e5e575fb986e7d38147e675f8d
