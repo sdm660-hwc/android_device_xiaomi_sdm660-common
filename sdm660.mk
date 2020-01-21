@@ -334,6 +334,10 @@ PRODUCT_PACKAGES += \
 $(call soong_config_set,qtipower,tap_to_wake_node,/sys/touchpanel/double_tap)
 $(call soong_config_set_bool,qtipower,interaction_boost,true)
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/powerhint_636.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint_636.json \
+    $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+
 # Protobuf
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-vendorcompat \
