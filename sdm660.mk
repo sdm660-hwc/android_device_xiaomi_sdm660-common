@@ -330,10 +330,7 @@ PRODUCT_PACKAGES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
-    vendor.qti.hardware.perf@2.0.vendor
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/perf/perf-profile0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile0.conf
+    vendor.qti.hardware.perf@2.2.vendor
 
 $(call soong_config_set,qtipower,tap_to_wake_node,/sys/touchpanel/double_tap)
 $(call soong_config_set_bool,qtipower,interaction_boost,true)
