@@ -51,21 +51,10 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
-    'system_ext/etc/init/dpmd.rc': blob_fixup()
-        .regex_replace('/system/product/bin/', '/system/system_ext/bin/'),
-    (
-        'system_ext/etc/permissions/com.qti.dpmframework.xml',
-        'system_ext/etc/permissions/dpmapi.xml',
-    ): blob_fixup()
-        .regex_replace('/system/product/framework/', '/system/system_ext/framework/'),
-    'system_ext/etc/permissions/qcrilhook.xml': blob_fixup()
-        .regex_replace('/product/framework/qcrilhook.jar', '/system_ext/framework/qcrilhook.jar'),
     'system_ext/lib64/lib-imscamera.so': blob_fixup()
         .add_needed('libgui_shim.so'),
     'system_ext/lib64/lib-imsvideocodec.so': blob_fixup()
-        .add_needed('libgui_shim.so'),
-    'system_ext/lib64/libdpmframework.so': blob_fixup()
-        .add_needed('libcutils_shim.so'),
+        .add_needed('libgui_shim.so')
     'vendor/bin/mlipayd@1.1': blob_fixup()
         .remove_needed('vendor.xiaomi.hardware.mtdservice@1.0.so'),
     'vendor/bin/pm-service': blob_fixup()

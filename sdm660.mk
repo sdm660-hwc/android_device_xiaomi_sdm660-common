@@ -116,6 +116,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl:32 \
     android.hardware.camera.provider@2.4-service \
     android.hardware.camera.provider@2.5:64 \
+    android.hardware.camera.provider@2.6:64 \
     libdng_sdk.vendor \
     libgui_shim \
     libpng.vendor:32 \
@@ -149,7 +150,8 @@ PRODUCT_PACKAGES += \
     libdisplayconfig \
     libtinyxml \
     libqdMetaData \
-    libqdMetaData.system
+    libqdMetaData.system \
+    libqdMetaData.vendor
 
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0_32 \
@@ -354,13 +356,16 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    android.hardware.radio@1.4.vendor \
+    android.hardware.radio@1.5.vendor \
     android.hardware.radio.config@1.2.vendor \
     android.hardware.radio.deprecated@1.0.vendor \
-    android.hardware.secure_element@1.0 \
-    android.hardware.secure_element@1.0.vendor \
+    android.hardware.secure_element@1.2 \
+    android.hardware.secure_element@1.2.vendor \
     rild \
     libnetutils.vendor \
+    android.hardware.radio@1.5 \
+    android.hardware.radio.config@1.2 \
+    libavservices_minijail.vendor \
     librmnetctl \
     libsqlite.vendor:64
 
