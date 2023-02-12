@@ -215,6 +215,13 @@ vendor/lib64/vendor.qti.gnss@3.0.so|511a8354bb199b1b4d0d264762bdc078fd9f3e6b
 vendor/lib64/vendor.qti.gnss@4.0-service.so|218e7e15a1d3b58bb8adb695e7b37036977c5573
 vendor/lib64/vendor.qti.gnss@4.0.so|7ba7853e772806f98fe60243542498a146dfe248
 
+# DSP - from S62Pro
+vendor/bin/dspservice|a8eb76af6150bbf29c12b76b00ab469b99f563f7
+vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc|fbf2bb38ca6bdddf98c7123da9e1f263a4eec55f
+vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy|f060101b26d3674bb173e5fc95e118f56a8ac15d
+vendor/lib/vendor.qti.hardware.dsp@1.0.so|f902e821229cd1fff50ebfba99b0a068cbf74a56
+vendor/lib64/vendor.qti.hardware.dsp@1.0.so|223a9268bd92bd80dab3df02fbef38ea86bcbadd
+
 # Graphics - from S62Pro
 vendor/lib/egl/eglSubDriverAndroid.so|28b215e408ee67c14ef9e9aaf5e4e4ed0a1ac7ff
 vendor/lib/egl/libEGL_adreno.so;SYMLINK=vendor/lib/libEGL_adreno.so;DISABLE_CHECKELF|5611a6caa50562757d812553642a0a45fcc12668
