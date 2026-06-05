@@ -191,13 +191,6 @@ PRODUCT_PACKAGES += \
     qcom.fmradio.xml
 endif
 
-# fwk-detect
-PRODUCT_PACKAGES += \
-    libqti_vndfwk_detect \
-    libqti_vndfwk_detect.vendor \
-    libvndfwk_detect_jni.qti \
-    libvndfwk_detect_jni.qti.vendor
-
 # GNSS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1-impl-qti \
@@ -350,7 +343,11 @@ PRODUCT_COPY_FILES += \
 
 # QMI
 PRODUCT_PACKAGES += \
-    libjson
+    libjson \
+    libqti_vndfwk_detect \
+    libqti_vndfwk_detect.vendor \
+    libvndfwk_detect_jni.qti \
+    libvndfwk_detect_jni.qti.vendor
 
 # RIL
 PRODUCT_PACKAGES += \
