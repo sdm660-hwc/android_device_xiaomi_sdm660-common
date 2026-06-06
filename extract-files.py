@@ -86,10 +86,6 @@ module.add_proprietary_file('proprietary-files-fm.txt').add_copy_files_guard(
     'BOARD_HAVE_QCOM_FM', 'true'
 )
 
-module.add_proprietary_file('proprietary-files-ir.txt').add_copy_files_guard(
-    'BOARD_HAVE_IR', 'true'
-)
-
 if __name__ == '__main__':
     utils = ExtractUtils.device(module)
     utils.run()
