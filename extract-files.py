@@ -70,6 +70,8 @@ blob_fixups: blob_fixups_user_type = {
         .binary_regex_replace(b'/system/etc/firmware', b'/vendor/firmware\x00\x00\x00\x00'),
     'vendor/lib64/libwvhidl.so': blob_fixup()
         .add_needed('libcrypto_shim.so'),
+    'vendor/bin/hw/android.hardware.drm@1.3-service.widevine': blob_fixup()
+        .add_needed('libwvhidl.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
